@@ -102,9 +102,9 @@ function eventTemplateSidebar( $eventType, $eventTitle, $eventContent, $eventUrl
                 <?php
                 if ( !empty( $eventContent ) ) {
                     echo wp_kses_post( $eventContent );
-                } else {
+                }/* else {
                     the_content();
-                }
+                }*/
                 ?>
             </p>
             <?php
