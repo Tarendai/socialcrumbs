@@ -91,7 +91,7 @@ function eventTemplateSidebar( $eventType, $eventTitle, $eventContent, $eventUrl
         if (($eventType == "text" && $eventIconStatus == "favorite") || $eventType == "link") {
             ?>
             <h3 class="post-content_title">
-                <?php echo esc_html( $eventTitle ); ?>
+                <?php echo wp_kses_post( $eventTitle ); ?>
             </h3>
             <?php
         }
